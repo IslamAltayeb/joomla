@@ -1,0 +1,147 @@
+/* global prop */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --header-color:#1c5785;
+    --button-color:#146dcc;
+}
+
+body{
+    background-image: url(../img/bg.jpg);  
+    background-repeat: no-repeat;
+}
+
+/* start header */
+.header{
+    background-color: var(--header-color);    
+}
+
+.header .container{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.header img{
+    width: 140px;
+}
+
+.header button{
+    border: none;
+    color: white;
+}
+
+.header button.org{
+    background-color: #eda644;
+}
+
+.header button.blu{
+    background-color: #1370cc;
+}
+/* end header */
+
+/* start navbar section */
+nav{
+    background-color: #2867a1;    
+    border-bottom: 1px solid #3674aa;
+    height: 42px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav a.active{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: var(--header-color);
+    color: white;
+    font-size: 14px;
+    font-weight: bold; 
+}
+/* end navbar section */
+
+/* start heading section */
+.heading h1, .heading p{
+    color: white;
+}
+/* end heading section */
+
+/* start card section */
+.row{
+    width: 80%;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+.row i{
+    width: 35px;
+    height: 35px;
+}
+
+.row .download{
+    background-color: #8cc46a;
+    color: white;
+}
+
+.row .rocket{
+    background-color: var(--button-color);
+    color: white;    
+}
+
+.row .screen{
+    background-color: #f2704c;
+    color: white;
+}
+
+.row a {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px;
+    color: white;        
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold; 
+    text-decoration: none;    
+  }
+
+  .row a.org{
+    background-color: #f2704c;    
+  }
+
+  .row a.blu{
+    background-color: #5691c8;
+  }
+
+  .row a.grn{
+    background-color: #8cc46a;
+  }
+/* end card section */
+
+/* start backGround black */
+.bg-black{
+    background-color: #0e111c;
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+    margin-top: -100px;
+    z-index: -9999;
+    position: absolute;
+}
+/* end backGround black */
